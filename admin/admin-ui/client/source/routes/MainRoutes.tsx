@@ -12,6 +12,7 @@ import MainLayout from 'layout/MainLayout';
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/sample/SamplePage')));
 const ApplicationRatePlans = Loadable(lazy(() => import('pages/ApplicationRatePlans/ListApplicationRatePlans')));
+const OrganizationsPage = Loadable(lazy(() => import('pages/Organizations/OrganizationsCard')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 export default function MainRoutes() {
@@ -26,6 +27,7 @@ export default function MainRoutes() {
                 <Route path="custom-policies" element={<SamplePage />} />
                 {/* <Route path="deny-policies" element={<SamplePage />} /> */}
                 {/* <Route path="gateways" element={<SamplePage />} /> */}
+                <Route path="organizations" element={<OrganizationsPage />} />
                 <Route path="api-categories" element={<SamplePage />} />
                 {/* <Route path="key-managers" element={<SamplePage />} /> */}
                 <Route path="advanced" element={<SamplePage />} />
